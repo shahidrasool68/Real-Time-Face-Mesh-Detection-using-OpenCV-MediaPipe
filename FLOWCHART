@@ -1,0 +1,48 @@
+## 🔄 Workflow / Flowchart
+
+```
+Start
+  │
+  ▼
+Take user input (number of faces)
+  │
+  ▼
+Initialize FaceMesh model
+  │
+  ▼
+Start Webcam
+  │
+  ▼
+Capture Frame (loop)
+  │
+  ▼
+Convert BGR → RGB
+  │
+  ▼
+Process frame using MediaPipe
+  │
+  ▼
+Faces detected?
+  │
+ ├── No ──► Show frame
+ │
+ └── Yes
+        │
+        ▼
+   Count faces
+        │
+        ▼
+   Draw landmarks + mesh
+        │
+        ▼
+   Display frame
+        │
+        ▼
+Press ESC?
+  │
+ ├── No ──► Repeat loop
+ └── Yes ─► End
+```
+
+
+"" UNDERSTAND THE CODE BETTER WITH THIS FLOWCHART !! ""
